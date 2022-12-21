@@ -85,7 +85,7 @@ object Advanced extends App {
 
   // Use case #1: implicit arguments
   def aMethodWithImplicitArgs(implicit arg: Int) = arg + 1
-  implicit val myImplicitInt = 46
+  implicit val myImplicitInt: Int = 46
 
   println(aMethodWithImplicitArgs)  // aMethodWithImplicitArgs(myImplicitInt)
 
